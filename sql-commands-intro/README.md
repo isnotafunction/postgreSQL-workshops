@@ -1,6 +1,4 @@
 # SQL Commands Introduction
-# sql commands workshop
-
 
 1. connect to postgres> `psql` or `pgcli`
 2. `CREATE DATABASE blog_workshop;`
@@ -26,11 +24,11 @@ commands:
     FROM table_name
     WHERE columnN LIKE pattern;
 
- '%' and '_' are wildcards 
- `WHERE text_content LIKE` `'``%d``'` ends with ‘d’
- `WHERE text_content LIKE 'd%'` begins with ‘d’
-`WHERE text_content LIKE '%d%'` has ‘d’ in any position
-`WHERE text_content LIKE '_d%'` has ‘d’ in second position
+ '%' and '_' are wildcards        
+ `WHERE text_content LIKE` `'``%d``'` ends with ‘d’   
+ `WHERE text_content LIKE 'd%'` begins with ‘d’   
+`WHERE text_content LIKE '%d%'` has ‘d’ in any position   
+`WHERE text_content LIKE '_d%'` has ‘d’ in second position   
 
 
 6. `SELECT user_id, text_content FROM blog_posts WHERE id IN(3,6);`
